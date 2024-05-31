@@ -1,0 +1,3 @@
+# Make a request to scrape the website every day @ 10 AM
+* 10 * * * root curl -X POST http://localhost:5000/scrape
+# New line character required for cron!
