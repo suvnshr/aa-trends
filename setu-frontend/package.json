@@ -1,0 +1,29 @@
+{
+  "name": "setu-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 7878",
+    "build": "next build",
+    "start": "next start --port 7878",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "axios": "^1.7.2",
+    "canvas": "^2.11.2",
+    "chart.js": "^4.4.3",
+    "faker": "^6.6.6",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

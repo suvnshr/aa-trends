@@ -1,0 +1,24 @@
+{
+    "urls": {
+        "FETCH_AA": "http://localhost:5000/fetch-aa"
+    },
+    "mock": {
+        "MIN_LENGTH_TO_DISPLAY": 3,
+        "aaNames": [
+            "Anumati",
+            "CAMS",
+            "CRIF",
+            "Digio",
+            "Finvu",
+            "INK",
+            "NADL",
+            "Onemoney",
+            "PhonePe",
+            "Protean SurakshAA",
+            "Saafe",
+            "Setu AA",
+            "TallyEdge",
+            "Yodlee"
+        ]
+    }
+}
