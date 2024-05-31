@@ -1,0 +1,36 @@
+services:
+
+  # Frontend
+  ui:
+    ports:
+      - "7878:7878"
+    build: ./setu-frontend
+
+  # Backend
+  backend:
+    build: ./setu-backend
+    env_file:
+      - ./setu-backend/.env
+
+    # Use the host network to
+    # ...access the db port using 'localhost' host.
+    network_mode: "host"
+
+  # DB
+  mongo:
+    image: mongo:4.4.17
+    ports:
+      - "29351:27017"
+
+    # Volume to store MongoDB data
+    volumes:
+      - setu_mongo_data:/data/db
+
+
+  # Cron job
+  cron:
+    build: ./cron
+    network_mode: "host"
+  
+volumes:
+  setu_mongo_data:
