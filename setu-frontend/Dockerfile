@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:iron-slim
 EXPOSE 7878
 
 COPY . /app
