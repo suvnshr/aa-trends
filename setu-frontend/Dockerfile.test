@@ -1,0 +1,11 @@
+FROM node:iron-slim
+
+COPY . /app
+
+WORKDIR /app
+
+# Install packages
+RUN npm i
+
+# Run frontend tests
+CMD [ "npm","run", "test" ]
